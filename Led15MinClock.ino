@@ -1,9 +1,9 @@
 #include "LedControl.h"
 
-/* pin 12 is connected to the DataIn 
- pin 11 is connected to the CLK 
- pin 10 is connected to LOAD 
- We have only a single MAX72XX.
+/* pin 12 -> DataIn/SDI
+ pin 11 -> CLK/SCL
+ pin 10 -> LOAD/CS
+ Last digit denotes that there is only a single MAX72XX.
  */
 LedControl lc=LedControl(12,11,10,1);
 int standardIntensity=5;
